@@ -95,6 +95,33 @@ git push origin master:master
 ```
 这样就把东西上传到github上了。
 
+为了方便发布网页，可以写成一个脚本，然后每次发布只要右键选择git bash here后运行./deploy.sh就可以。
+
+```bash
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+# build the project
+hugo
+git add .
+
+msg="rebuilding site `date`"
+
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+
+git commit -m "$msg"
+
+# push source to github
+git push origin master:master 
+```
+
+
+
+
+
 ### 3、用Netlify渲染网页
 最后我们用[Netlify](https://www.netlify.com)对托管到github上的静态网页进行渲染。很简单，可以看这篇[教程](https://kuleyu.github.io/hexolog/post/31808.html)。至此一个简陋的网页就建好了。记得改一下Netlify自动分配给你的域名，不过只能更改前缀。要求不高也还好了。但是可一点也不cool啊，客官别急，请看下面进阶教程。
 
