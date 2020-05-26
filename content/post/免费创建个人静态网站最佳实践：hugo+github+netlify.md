@@ -13,9 +13,9 @@ draft: false
 ---
 
 
-[TOC]
+{{% toc %}}
 
-# 前言
+## 一、前言
 关于搭建一个博客或个人网站的好处不用我多说，但创建网站的难度可能会让人望而却步。本人从网络上获得过很多帮助，学到很多。很早就萌发了自己建网站并分享知识的想法，但是又不想在简书这类的网站上写作。原谅我是个拖延控，有时间就写一点，很可能一篇文章写好久，也不喜欢在网上编辑。此外，知识需要积累形成框架，由于平时我所有的笔记都放在有道云笔记中，复制粘贴到简书有时候格式不对，又不想进行二次编辑。最重要的是不够Geek（装逼）。
 
 其实中间有过一段时间，利用hexo、github和github page创建过静态网站。但是用得不太顺手，原因有很多，比如：老是花时间在怎么改网页主题上，而不是专注在写作上；markdown（md）文件中的图片迁移很麻烦，网上的图片老是会丢失；github page 在国内打开很慢而且SEO不容易搜索到。因此，一直耽误到现在，其实一直贼心不死，想得到一个不太要维护，可以专注写作，文档可以同步（在别的电脑上也可以编辑），又很geek的网站。我的想法是把所有笔记保存在有道云笔记中进行维护和整理，需要分享的话可以在本地用typora写md文档，同时又在有道云笔记中进行保存。此外，md文档中的图片用图床解决移动问题，然后托管到git自动渲染成网页。这样只要图床不挂，分享或上传到其它平台就很方便，因为只要复制md文档就行。为什么不直接用有道云笔记中的md呢？因为它要插入图片得是VIP，而导出来的md文档里所有图片的超链接是私人链接，移到别的地方根本没办法显示图片。最终我觉得搭网站最好的方式是：hugo+github+Netlify。适合我的笔记保存和写作的最佳方式是：有道云笔记+Listry+typora+picgo。如果觉得太麻烦了，不想把博客和有道云笔记等之类的笔记工具连接在一起，也不会传到其它平台上，写作可以直接用typora，利用hugo的page bundle绑定图片。
@@ -23,7 +23,7 @@ draft: false
 
 关于利用hugo和Github建网站的博客很多，但是有些博客内容有些出入，可能是由于英文翻译或版本更新所造成的。这里建议大家直接看hugo的[英文官网](https://gohugo.io/getting-started/quick-start/)和[hugo in action](https://livebook.manning.com/book/hugo-in-action/about-this-meap/v-4/)，或者[官方翻译](https://s0gohugo0io.icopy.site)。此外，网上的博客可以进行参考。这篇博客主要针对搭建过程中可能遇到的问题进行记录，希望对大家有所帮助。  
 
-# 原理
+## 二、原理
 那么如何用静态网页创建网站呢？很多博客一上来就直接讲方法，怎么一步步运行，得到一个简陋的网页。但是不知其所以然，因此这里想先介绍一下基本原理，方便理解和后面的debug。
 1. 首先你得在本地生成静态网页文件。这里推荐用hugo或hexo。
 2. 然后把静态网页文件托管到github仓库。这里推荐使用git和gitlab工具。
@@ -32,11 +32,11 @@ draft: false
 
 关于hugo和hexo，github和gitlab，github page和Netlify的差别网上有很多博客，这里就不赘述了。目前我觉得最好的方式是：hugo+github+Netlify
 
-# 快速入门
+## 三、快速入门
 
 如果有相关静态网页生成的经历，可以直接忽略快速入门，直接到下一节：进阶。
 
-## 1、本地生成静态网页文件
+### 1、本地生成静态网页文件
 如果不想看英文的，可以参考[这篇](https://jdhao.github.io/2018/10/10/hexo_to_hugo/)和[这篇](https://mogeko.me/2018/018/)中文 。
 
 下面简要阐述过程：  
@@ -81,7 +81,7 @@ Error: "E:\blogs\quickstart\config.toml:3:1": unmarshal failed: Near line 3 (las
 这是因为E:\blogs\hugo\config.toml里面有一些NUL的间隔符，可能是由于echo的命令产生的。手动把它们删除就行了。
 
 
-## 2、托管到github
+### 2、托管到github
 把我们本地生成的静态网页托管到[github](https://github.com)上进行保存，而不用自己进行维护。  
 首先在github上新建账号，并创建一个新的仓库，以仓库名为test为例。  
 
@@ -91,18 +91,18 @@ git init
 git add .
 git commit -m "update"
 git remote add origin https://github.com/你的git账户/test.git
-git push
+git push origin master:master
 ```
 这样就把东西上传到github上了。
 
-## 3、用Netlify渲染网页
+### 3、用Netlify渲染网页
 最后我们用[Netlify](https://www.netlify.com)对托管到github上的静态网页进行渲染。很简单，可以看这篇[教程](https://kuleyu.github.io/hexolog/post/31808.html)。至此一个简陋的网页就建好了。记得改一下Netlify自动分配给你的域名，不过只能更改前缀。要求不高也还好了。但是可一点也不cool啊，客官别急，请看下面进阶教程。
 
 
 
 
-# 进阶
-## 1、添加主题
+## 四、进阶
+### 1、添加主题
 首先我们可以到[hugo主题库](https://themes.gohugo.io)中找一个自己喜欢的主题。我比较喜欢的一个主题是academic，B站上还有人介绍[Academic视频](https://www.bilibili.com/video/BV1Tt411g7jx?p=2)。
 由于大部分主题都已经有站点所需要的各种文件夹，所以不用自己再建站点。直接clone下来，把主题换成子模块的就行。快速入门的什么的可以忘记了^_^。
 
@@ -112,29 +112,27 @@ cd My_Website
 git submodule update --init --recursive
 ```
 
-## 2、修改网页
-我们可以根据[academic文档](https://sourcethemes.com/academic/docs/)进行修改，变成你自己喜欢的样式。
+### 2、修改网页
+我们可以根据[academic文档](https://sourcethemes.com/academic/docs/)进行修改，变成你自己喜欢的样式。这个academic帮助文档讲得很清楚，这里就不赘述。
 
-当然还有一个刚需就是添加评论系统，要不然没有互动在那孤芳自赏？
-
-由于这部分内容太多，后面会单独开一章进行阐述。
+不过还有一个刚需就是添加评论系统，要不然没有互动在那孤芳自赏？这里推荐[Gitalk](https://github.com/gitalk/gitalk/)，可参考这篇[博客](https://mogeko.me/2018/024/)进行安装。
 
 
 
-# 写作
+## 五、写作
 
-## 1、图片管理
+### 1、图片管理
 在md文档中插入的图片是一个麻烦事。一般来说有三种解决方案。如下所示
 
-### 放置在static中
+#### 放置在static中
 可以直接把图片放在static中，不过以后图片一多就麻烦了。如果后面想迁移什么的就太麻烦了。
 
-### 利用page bundle
+#### 利用page bundle
 可以在post下面新建文件夹，重命名为你想要的博客名后新建md文件。这个md文档名称一定得是**index.md**，然后我们就可在同一目录下放置图片。md可以使用相对位置进行引用。
 
 其实如果不是为了同时保存md文件在有道云笔记的话，这种方式是最方便的，而且免费。
 
-### 利用图床
+#### 利用图床
 这里利用picgo工具，把图片复制后，按一个快捷键就会自动上传到picgo内设置的图床上。  
 
 [picgo教程](https://picgo.github.io/PicGo-Doc/zh/)支持8大图床。可以选免费的**smms**和github（虽然github慢了点），也可以氪金买云服务。
@@ -143,17 +141,17 @@ git submodule update --init --recursive
 
 ---
 
-综上，图床是最方便的，但需要点时间配置各个软件。page bundle是最简单的，但是如果不能移动到其它平台。
+综上，图床是最方便的，但需要点时间配置各个软件。page bundle是最简单的，但是如果移动到其它平台就不方便了。
 
 
 
-## 2、更新博客的流程
+### 2、更新博客的流程
 
 日后更新博客时就需要在本地的hugo\content\post文件夹中编辑新的md文件，并通过git指令同步到Github中，Netlify会检测Github中库的动态，并及时更新发布的网站内容。  
 
 
 
-## 3、在另一台电脑上写作
+### 3、在另一台电脑上写作
 
 同时由于静态网页托管到github，可以很方便地进行同步。直接用```git pull```把github拉下来就行，写完后```git push``` 到仓库就万事大吉了。
 
@@ -163,7 +161,7 @@ git submodule update --init --recursive
 
 
 
-# 域名
+## 六、域名
 
 最后为了装一下，怎么也得换个个性化的域名啊。网上到处看了看，感觉比较复杂。因为在国内买域名还得备案，听说很麻烦。后来直接到name.com购买了域名。
 
@@ -173,7 +171,7 @@ git submodule update --init --recursive
 
 ![image-20200526113018470](https://i.loli.net/2020/05/26/3kwRGpLSuICDW8d.png)
 
-# Debug
+## 七、Debug
 
 - push error
 ```
@@ -186,3 +184,10 @@ fatal: unable to access 'https://github.com/Feng-Zhang/academic-kickstart.git/':
 对这个凭据进行编辑，把要远程的账号和密码加上。 
 
 ![image-20200526130114714](https://i.loli.net/2020/05/26/Ox6Gdy9sVJzlm71.png)
+
+
+
+```
+{{ partial "gitalk.html" . }}
+```
+

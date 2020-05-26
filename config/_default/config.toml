@@ -5,7 +5,7 @@
 # Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
 # Title of your site
-title = "Academic"
+title = "数欲静而风不止"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -77,3 +77,13 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+
+# comment
+[params]
+  enableGitalk = true
+
+[params.gitalk]
+  owner = "Feng-Zhang"
+  repo = "blogComment"
+  client_id = "58b08f89711987de2fb9"
+  client_secret = "98a0146559657e7dae357206742a9b0297604788"
