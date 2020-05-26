@@ -18,7 +18,7 @@ draft: false
 ## 一、前言
 关于搭建一个博客或个人网站的好处不用我多说，但创建网站的难度可能会让人望而却步。本人从网络上获得过很多帮助，学到很多。很早就萌发了自己建网站并分享知识的想法，但是又不想在简书这类的网站上写作。原谅我是个拖延控，有时间就写一点，很可能一篇文章写好久，也不喜欢在网上编辑。此外，知识需要积累形成框架，由于平时我所有的笔记都放在有道云笔记中，复制粘贴到简书有时候格式不对，又不想进行二次编辑。最重要的是不够Geek（装逼）。
 
-其实中间有过一段时间，利用hexo、github和github page创建过静态网站。但是用得不太顺手，原因有很多，比如：老是花时间在怎么改网页主题上，而不是专注在写作上；markdown（md）文件中的图片迁移很麻烦，网上的图片老是会丢失；github page 在国内打开很慢而且SEO不容易搜索到。因此，一直耽误到现在，其实一直贼心不死，想得到一个不太要维护，可以专注写作，文档可以同步（在别的电脑上也可以编辑），又很geek的网站。我的想法是把所有笔记保存在有道云笔记中进行维护和整理，需要分享的话可以在本地用typora写md文档，同时又在有道云笔记中进行保存。此外，md文档中的图片用图床解决移动问题，然后托管到git自动渲染成网页。这样只要图床不挂，分享或上传到其它平台就很方便，因为只要复制md文档就行。为什么不直接用有道云笔记中的md呢？因为它要插入图片得是VIP，而导出来的md文档里所有图片的超链接是私人链接，移到别的地方根本没办法显示图片。最终我觉得搭网站最好的方式是：hugo+github+Netlify。适合我的笔记保存和写作的最佳方式是：有道云笔记+Listry+typora+picgo。如果觉得太麻烦了，不想把博客和有道云笔记等之类的笔记工具连接在一起，也不会传到其它平台上，写作可以直接用typora，利用hugo的page bundle绑定图片。
+其实中间有过一段时间，利用hexo、github和github page创建过静态网站。但是用得不太顺手，原因有很多，比如：老是花时间在怎么改网页主题上，而不是专注在写作上；markdown（md）文件中的图片迁移很麻烦，网上的图片老是会丢失；github page 在国内打开很慢而且SEO不容易搜索到。因此，一直耽误到现在，但一直贼心不死，想得到一个不太需要维护，可以专注写作，文档可以同步（在别的电脑上也可以编辑），又很geek的网站。我的想法是把所有笔记保存在有道云笔记中进行维护和整理，需要分享的话可以在本地用typora写md文档。此外，md文档中的图片用图床解决移动问题，然后托管到git自动渲染成网页。这样只要图床不挂，分享或上传到其它平台就很方便，因为只要复制md文档就行。为什么不直接用有道云笔记中的md呢？因为插入图片得是VIP才行，而导出来的md文档里所有图片的超链接是私人链接，移到别的地方根本没办法显示图片。最终我觉得搭网站最好的方式是：hugo+github+Netlify。适合我的笔记保存和写作的最佳方式是：有道云笔记+typora+picgo。如果觉得太麻烦了，不想把博客和有道云笔记等之类的笔记工具连接在一起，也不会传到其它平台上，可以直接用typora写作，利用hugo的page bundle绑定图片。
 
 
 关于利用hugo和Github建网站的博客很多，但是有些博客内容有些出入，可能是由于英文翻译或版本更新所造成的。这里建议大家直接看hugo的[英文官网](https://gohugo.io/getting-started/quick-start/)和[hugo in action](https://livebook.manning.com/book/hugo-in-action/about-this-meap/v-4/)，或者[官方翻译](https://s0gohugo0io.icopy.site)。此外，网上的博客可以进行参考。这篇博客主要针对搭建过程中可能遇到的问题进行记录，希望对大家有所帮助。  
@@ -30,14 +30,14 @@ draft: false
 3. 把远程的静态网页文件进行渲染，形成让大家可根据网址直接阅览的网页。可用github page和Netlify.
 4. 找到有道云笔记的md文件，用typora进行编辑，并用图床解决图片容易丢失问题。
 
-关于hugo和hexo，github和gitlab，github page和Netlify的差别网上有很多博客，这里就不赘述了。目前我觉得最好的方式是：hugo+github+Netlify
+关于hugo和hexo，github和gitlab，github page和Netlify的差别网上有很多博客，这里就不赘述了。目前我觉得最好的方式是：hugo+github+Netlify。
 
 ## 三、快速入门
 
 如果有相关静态网页生成的经历，可以直接忽略快速入门，直接到下一节：进阶。
 
 ### 1、本地生成静态网页文件
-如果不想看英文的，可以参考[这篇](https://jdhao.github.io/2018/10/10/hexo_to_hugo/)和[这篇](https://mogeko.me/2018/018/)中文 。
+如果不想看英文的，可以参考[这篇](https://jdhao.github.io/2018/10/10/hexo_to_hugo/)和[这篇](https://mogeko.me/2018/018/)中文入门。
 
 下面简要阐述过程：  
 ```
@@ -83,7 +83,7 @@ Error: "E:\blogs\quickstart\config.toml:3:1": unmarshal failed: Near line 3 (las
 
 ### 2、托管到github
 把我们本地生成的静态网页托管到[github](https://github.com)上进行保存，而不用自己进行维护。  
-首先在github上新建账号，并创建一个新的仓库，以仓库名为test为例。  
+首先在github上新建账号，并创建一个新的仓库，以仓库名为test为例。再下载安装[git](https://git-scm.com/) 。
 
 ```
 cd .\public
@@ -142,9 +142,9 @@ git submodule update --init --recursive
 ### 2、修改网页
 我们可以根据[academic文档](https://sourcethemes.com/academic/docs/)进行修改，变成你自己喜欢的样式。这个academic帮助文档讲得很清楚，这里就不赘述。
 
-不过还有一个刚需就是添加评论系统，要不然没有互动在那孤芳自赏？
+不过提一下添加评论系统，这应该是一个刚需。要不然没有互动在那孤芳自赏？
 
-这里图方便，直接用了commento。academic主题设置commento很方便：
+由于academic主题设置commento很方便，这里图方便直接用了：
 
 1. 把config/_default/params.toml中的```engine = 0```改成```engine = 2```。
 2. 注册[commento](https://commento.io)账号，把你自己博客域名进行绑定即可。
@@ -175,19 +175,19 @@ git submodule update --init --recursive
 
 ---
 
-综上，图床是最方便的，但需要点时间配置各个软件。page bundle是最简单的，但是如果移动到其它平台就不方便了。
+综上，图床是最方便的，但需要点时间配置各个软件。page bundle是最简单的，但是如果没法移动到其它平台。
 
 
 
 ### 2、更新博客的流程
 
-日后更新博客时就需要在本地的hugo\content\post文件夹中编辑新的md文件，并通过git指令同步到Github中，Netlify会检测Github中库的动态，并及时更新发布的网站内容。  
+日后更新博客时就只需要在本地的hugo\content\post文件夹中编辑新的md文件，然后```./deploy.sh```就会自动编译静态网页然后上传至github，同时Netlify会检测Github中库的动态，并及时更新发布的网站内容。  
 
 
 
 ### 3、在另一台电脑上写作
 
-同时由于静态网页托管到github，可以很方便地进行同步。直接用```git pull```把github拉下来就行，写完后```git push``` 到仓库就万事大吉了。
+由于静态网页是托管到github，可以很方便地进行同步。直接用```git pull```把github拉下来就行，写完后```git push``` 到仓库就万事大吉了。
 
 ----
 
