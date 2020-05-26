@@ -187,7 +187,3 @@ fatal: unable to access 'https://github.com/Feng-Zhang/academic-kickstart.git/':
 
 
 
-```
-{{ partial "gitalk.html" . }}
-```
-
