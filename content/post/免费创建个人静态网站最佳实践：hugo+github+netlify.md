@@ -115,7 +115,14 @@ git submodule update --init --recursive
 ### 2、修改网页
 我们可以根据[academic文档](https://sourcethemes.com/academic/docs/)进行修改，变成你自己喜欢的样式。这个academic帮助文档讲得很清楚，这里就不赘述。
 
-不过还有一个刚需就是添加评论系统，要不然没有互动在那孤芳自赏？这里推荐[Gitalk](https://github.com/gitalk/gitalk/)，可参考这篇[博客](https://mogeko.me/2018/024/)进行安装。
+不过还有一个刚需就是添加评论系统，要不然没有互动在那孤芳自赏？
+
+这里图方便，直接用了commento。academic主题设置commento很方便：
+
+1. 把config/_default/params.toml中的```engine = 0```改成```engine = 2```。
+2. 注册[commento](https://commento.io)账号，把你自己博客域名进行绑定即可。
+
+此外，国外用的比较多的有Disqus，国内有valine和Gittalk。不过[Gitalk](https://github.com/gitalk/gitalk/)有点复杂，可参考这篇[博客](https://mogeko.me/2018/024/)进行安装。
 
 
 
