@@ -20,7 +20,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "CEO"
   company = "GenCoin"
-  company_url = ""
+  company_url = "aaa.com"
   location = "California"
   date_start = "2017-01-01"
   date_end = ""
