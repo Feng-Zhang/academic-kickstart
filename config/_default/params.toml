@@ -90,7 +90,7 @@ address = {street = "999 xuefu road", city = "Nanchang", region = "Jiangxi", pos
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "28.6469", longitude = "115.7962"}
+coordinates = {latitude = "28.6546", longitude = "115.8019"}
 
 # Directions for visitors to locate you.
 #directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
