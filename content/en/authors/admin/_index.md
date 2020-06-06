@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Aaron
+title: Feng Zhang
 
 # Username (this should match the folder name)
 authors:
@@ -10,31 +10,47 @@ authors:
 superuser: true
 
 # Role/position
-role: 
+role: Assistant Professor 
 
 # Organizations/Affiliations
-organizations:
-- name: 
-  url: ""
+organizations:  
+- name: Nanchang University
+  url: "http://www.ncu.edu.cn/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 
+interests:
+- Multi-omics
+- Bioinformatics
+- Artificial Intelligence
+- Biomarkers for cancer
 
+education:
+  courses:
+  - course: Ph.D in Animal Genetics
+    institution: University of Alberta and Jiangxi agricultural university
+    year: 2017
+  - course: M.Sc. in Animal Genetics
+    institution: Jiangxi Agricultural University
+    year: 2014
+  - course: B.Sc. in Agronomy
+    institution: Jiangxi Agricultural University
+    year: 2011
 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-social:
+#social:
 #- icon: envelope
  # icon_pack: fas
-  #link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-#- icon: twitter
+  #link: 'mailto:fengzhang0709@hotmail.com'  # For a direct email link, use "mailto:test@example.org".
+#- icon: qq
  # icon_pack: fab
-  #link: https://twitter.com/GeorgeCushen
+  #link: 297946506
 #- icon: google-scholar
  # icon_pack: ai
   #link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
