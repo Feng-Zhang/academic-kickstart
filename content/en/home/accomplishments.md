@@ -19,8 +19,20 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "Jiangxi Provense"
-  organization_url = "https://www.coursera.org"
+  organization = "Department of Education of Jiangxi Province"
+  organization_url = "http://jyt.jiangxi.gov.cn/"
+  title = "Outstanding Doctoral Dissertation of Jiangxi Province"
+  url = ""
+  #certificate_url = "https://www.coursera.org"
+  date_start = "2018-10-01"
+  date_end = ""
+  description = ""
+
+
+
+[[item]]
+  organization = "Jiangxi Agricultural University"
+  organization_url = "http://www.jxau.edu.cn"
   title = "Scholarship of Academic Excellence "
   url = ""
   #certificate_url = "https://www.coursera.org"
@@ -29,23 +41,52 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
+  organization = "Ministry of Education of the People's Republic of China"
+  organization_url = "http://www.moe.gov.cn/"
+  title = "The National Scholarship of China"
+  #url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
+  #certificate_url = "https://www.edx.org"
+  date_start = "2016-10-01"
   date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
+  description = ""
+
+
+
+
 
 [[item]]
-  organization = "DataCamp"
-  organization_url = "https://www.datacamp.com"
-  title = "Object-Oriented Programming in R: S3 and R6 Course"
+  organization = "Jiangxi Agricultural University"
+  organization_url = "http://www.jxau.edu.cn"
+  title = "Scholarship of Academic Excellence "
   url = ""
-  certificate_url = "https://www.datacamp.com"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
+  #certificate_url = "https://www.coursera.org"
+  date_start = "2015-10-01"
+  date_end = ""
+  description = ""
+
+
+
+[[item]]
+  organization = "Jiangxi Agricultural University"
+  organization_url = "http://www.jxau.edu.cn"
+  title = "Scholarship of Academic Excellence "
+  url = ""
+  #certificate_url = "https://www.coursera.org"
+  date_start = "2014-10-01"
+  date_end = ""
+  description = ""
+
+
+
+[[item]]
+  organization = "Jiangxi Agricultural University"
+  organization_url = "http://www.jxau.edu.cn"
+  title = "Outstanding Graduates of Jiangxi Agricultural University"
+  url = ""
+  #certificate_url = "https://www.datacamp.com"
+  date_start = "2014-07-01"
+  date_end = ""
   description = ""
 
 +++
+
