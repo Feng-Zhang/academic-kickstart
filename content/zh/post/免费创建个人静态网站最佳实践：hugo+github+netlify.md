@@ -5,8 +5,7 @@ summary: "利用hugo+github+netlify创建个人静态网站最佳方式，专注
 authors: [风不止]  
 tags: ["hugo","academic","静态网站"]  
 categories: [网站]  
-date: 2020-05-25T15:56:11+08:00  
-lastmod: 2020-05-25T15:56:11+08:00  
+date: 2020-05-25
 featured: false  
 draft: false  
 
