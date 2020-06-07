@@ -147,7 +147,7 @@ git submodule update --init --recursive
 由于academic主题设置commento很方便，这里图方便直接用了：
 
 1. 把config/_default/params.toml中的```engine = 0```改成```engine = 2```。
-2. 注册[commento](https://commento.io)账号，把你自己博客域名进行绑定即可。
+2. 注册[commento](https://commento.io)账号，在commento网站中把你自己博客域名进行绑定即可。
 
 此外，国外用的比较多的有Disqus，国内有valine和Gittalk。不过[Gitalk](https://github.com/gitalk/gitalk/)有点复杂，可参考这篇[博客](https://mogeko.me/2018/024/)进行安装。
 
