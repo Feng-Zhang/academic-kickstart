@@ -8,9 +8,10 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
 title = "博客"
-subtitle = ""
+subtitle =""
 
 [content]
+
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
 
@@ -67,3 +68,7 @@ subtitle = ""
  css_class = ""
 
 +++
+
+{{% alert note %}}
+[所有博客>>]({{< ref "/post/_index.md" >}})
+{{% /alert %}}
