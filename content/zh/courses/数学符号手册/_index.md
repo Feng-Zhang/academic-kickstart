@@ -1,13 +1,13 @@
 ---
 # Course title, summary, and position.
 linktitle: 数学符号手册
-summary: 理解常用数学符号。
+summary: 理解常用数学符号，参考""。
 weight: 1
 
 # Page metadata.
-title: Overview
-date: "2018-09-09T00:00:00Z"
-lastmod: "2018-09-09T00:00:00Z"
+title: 前言
+date: "2020-08-17T00:00:00Z"
+lastmod: "2020-08-18T00:00:00Z"
 draft: false  # Is this a draft? true/false
 toc: true  # Show table of contents? true/false
 type: docs  # Do not modify.
@@ -17,7 +17,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu:
   数学符号手册:
-    name: Overview
+    name: 前言
     weight: 1
 ---
 
