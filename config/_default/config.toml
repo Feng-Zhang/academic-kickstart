@@ -24,11 +24,6 @@ theme = "academic"
 
 # Get last modified date for content from Git?
 enableGitInfo = true
-[frontmatter]
-date = ["date","publishDate"]
-lastmod = [ ":git","lastmod", "date", "publishDate"]
-publishDate = ["publishDate", "date"]
-expiryDate = ["expiryDate"]
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
