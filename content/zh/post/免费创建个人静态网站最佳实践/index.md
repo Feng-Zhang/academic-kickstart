@@ -7,13 +7,28 @@ tags: ["hugo","academic","静态网站"]
 categories: [网站]  
 date: 2020-05-25T15:56:11+08:00
 lastmod: 2020-07-06T15:56:11+08:00
-featured: false  
-draft: false  
+featured: false
+draft: false
 
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+image:
+  placement: 1
+  caption: ''
+  focal_point: "Smart"
+  preview_only: false
+  
 ---
 
 
+
+
+
 {{% toc %}}
+
+
 
 ## 一、前言
 
