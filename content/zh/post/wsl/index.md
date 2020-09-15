@@ -1,9 +1,9 @@
 ---
-title: " win10的ubuntu子系统实在太好用了"  
+title: " 在win10中使用ubuntu子系统WSL如何安装g++"  
 subtitle: ""  
-summary: "利用hugo+github+netlify创建个人静态网站最佳方式，专注写作而不是网页控件。"  
+summary: "windows下使用linux (WSL)系统时正确安装g++"  
 authors: [风不止]  
-tags: ["win10","ubuntu","debug","g++"]  
+tags: ["win10","ubuntu","g++ install","安装"]  
 categories: [windows]  
 date: 2020-09-15T15:56:11+08:00
 featured: false
@@ -220,7 +220,7 @@ Codename:       focal
 
 2. 重新更换中科院的源
 
-　　由于[一直学的博客](https://zhuanlan.zhihu.com/p/76032647)使用的软件源是用于系统代号为`bionic`的ubuntu系统，所以这里一定要改成`focal`。打开sources.list，`sudo vim /etc/apt/sources.list`将原来的东西清空，把下面的源地址粘贴上去：
+　　由于网上很多软件源都是用于系统代号为`bionic`的ubuntu系统，所以这里一定要改成`focal`。打开sources.list，`sudo vim /etc/apt/sources.list`将原来的东西清空，把下面的源地址粘贴上去：
 
 ```
 # 默认注释了源码仓库，如有需要可自行取消注释
