@@ -4,7 +4,7 @@ linktitle: 逻辑
 toc: true
 type: docs
 date: "2020-09-14T00:00:00+01:00"
-draft: false
+draft: ture
 menu:
   数学符号手册:
     parent: 第三章
