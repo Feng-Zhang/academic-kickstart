@@ -1,17 +1,17 @@
 ---
-title: 第二章 合集
-linktitle: 合集
+title: 合集
+linktitle: 第二章 合集
 toc: true
 type: docs
 date: "2020-09-03T00:00:00+01:00"
 draft: false
 menu:
   数学符号手册:
-    parent: 第二章
-    weight: 1
+    parent: 目录
+    weight: 2
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 2
 ---
 
 ## 1. 集合
@@ -60,7 +60,7 @@ weight: 1
 
 - **对称差**。如果有集合$A$和集合$B$，$A \triangle B$表示一个集合且它的元素属于$A$或$B$但不属于它们俩共有的。例如$\lbrace 1,2,3 \rbrace \triangle \lbrace 2,4,6 \rbrace = \lbrace 1,3,4,6 \rbrace$。我们可知$A \triangle B = (A \bigcup B)-(A \bigcap B)=(A-B) \bigcup (B-A)$。
 
-- **势**。如果$A$是一个集合，那么$|A|$表示$A$的元素个数，有时也会用$\#A$来表示。例如，如果集合$A = \lbrace 1,2,4 \rbrace$，那么$|A|=3$。
+- **势**。如果$A$是一个集合，那么$|A|$表示$A$的元素个数，有时也会用#$A$来表示。例如，如果集合$A = \lbrace 1,2,4 \rbrace$，那么$|A|=3$。
 
 - **笛卡尔乘积**。集合$A$和集合$B$的笛卡尔乘积为$A \times B = \lbrace (a,b):a \in A,b\in B \rbrace$。例如$\lbrace 1,2,3 \rbrace \times \lbrace 3,4 \rbrace = \lbrace (1,3),(1,4),(2,3),(2,4),(3,3),(3,4) \rbrace$。符号$A^2$表示$A \times A$，即所有的有序元素对$(x,y)$，其中$x,y \in A$。当$n$是正整数时，$A^n$则表示一个集合，它的每个元素是长度为n的有序**列表**。
 
@@ -95,8 +95,9 @@ weight: 1
 　　上面的例子中，下标（虚拟变量）是连续不间断的正整数。但是如果我们希望累加的下标是其它形式的怎么办？例如，当$A$是集合$\lbrace 1,5,6,22 \rbrace$，然后$\sum_{t \in A}{t^2}=1^2+5^2+6^2+22^2$。
 
 　　当然，下标也可以是简单的英文描述。例如：
+
 $$
-\prod_{p\ prime}{(1-\frac{1}{p})}=(1-\frac 1 2)\times(1-\frac 1 3)\times(1-\frac 1 5) \times(1-\frac 1 7)\times(1-\frac 1 {11})\times {\cdots}
+\begin{smallmatrix}\prod_{p\ prime}{(1-\frac{1}{p})}=(1-\frac 1 2)\times(1-\frac 1 3)\times(1-\frac 1 5) \times(1-\frac 1 7)\times(1-\frac 1 {11})\times {\cdots}\end{smallmatrix}
 $$
 
 
@@ -113,6 +114,8 @@ $$
 <center> 第9页 </center>
 
 　　如果操作符太多的话，一般都会写成虚拟变量的形式。例如，当$p_1,p_2,\ldots,p_n$是逻辑值(真或假)时，$\wedge_{i=1}^n{p_i}$是指$p_1 \wedge p_2 \wedge \ldots \wedge p_n$。
+
+---
 
 <center> 第10页 </center>
 
