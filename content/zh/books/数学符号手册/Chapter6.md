@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Chapter6"
-linktitle: "Chapter6"
-summary:
+title: "函数"
+linktitle: "第六章 函数"
+summary: 数学符号手册，翻译至Mathematical Notation by Edward R. Scheinerman。如何表示函数。
 date: 2020-09-27T21:41:47+08:00
 lastmod: 2020-09-27T21:41:47+08:00
 draft: false  # Is this a draft? true/false

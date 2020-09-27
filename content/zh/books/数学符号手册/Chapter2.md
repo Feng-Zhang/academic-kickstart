@@ -1,6 +1,7 @@
 ---
 title: 合集
 linktitle: 第二章 合集
+summary: 数学符号手册，翻译至Mathematical Notation by Edward R. Scheinerman。如何表示合集。
 toc: true
 type: docs
 date: "2020-09-03T00:00:00+01:00"

@@ -3,7 +3,7 @@
 
 title: "数字"
 linktitle: "第四章 数字"
-summary: 数学符号手册：如何表示数字
+summary: 数学符号手册，翻译至Mathematical Notation by Edward R. Scheinerman。如何表示数字。
 date: 2020-09-23T22:21:58+08:00
 lastmod: 2020-09-23T22:21:58+08:00
 draft: ture  # Is this a draft? true/false
