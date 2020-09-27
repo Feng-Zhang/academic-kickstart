@@ -36,10 +36,10 @@ menu:
 
 　　科学计数法常常用来表示实数，特别是一些很大或很少的数。例如：$1.23\times 10^7 = 12,300,000$ 和$4.56\times 10^{-4}=0.000456$。在10的幂前面的数字通常要大于1且小于10。电脑程序使用科学计数法来表示数字时可能会用E或e来代替10的幂运算，像这样：
 $$
-\begin{align}
+\begin{align*}
 1.23\times 10^7 \quad &1.23E07 \\\\
 4.56\times10^{-4} \quad &4.56E-04
-\end{align}
+\end{align*}
 $$
 
 ---
@@ -47,10 +47,10 @@ $$
 
 　　工程符号是科学计数法的变体，10的指数一定要是3的倍数，像这样:
 $$
-\begin{align}
+\begin{align*}
 Scientific\ notation:\quad &6.022\times 10^{23}\\\\
 Engineering\ notation:\quad &602.2\times10^{21}
-\end{align}
+\end{align*}
 $$
 对于工程符号，在10的幂前面的数字应该要大于1小于1000。
 
@@ -110,14 +110,14 @@ $$
 
 　　实数的区间可以用开放或关闭的括号和中括号表示。括号表示区间不包括临界点，而中括号则表示区间包括临界点。下面列出几个例子：
 $$
-\begin{align}
+\begin{align*}
 [1,2]=\lbrace x \in {\Bbb R}:1 \leq x \leq 2\rbrace \\\\ 
 [1,2)=\lbrace x \in {\Bbb R}:1 \leq x < 2\rbrace \\\\
 (1,2]=\lbrace x \in {\Bbb R}:1 < x \leq 2\rbrace \\\\
 (1,2)=\lbrace x \in {\Bbb R}:1 < x < 2\rbrace \\\\
-\end{align}
+\end{align*}
 $$
-　　有些人用反中括号表示不包括一个区间的临界点。例如$[a,b[$表示的意思和$[a,b)$是一样的，即$\lbrace x:a \leq x <b\rbrace$。类似地，$]a,b]$表示$(a,b]$，而$]a,b[$表示$(a,b)$。
+　　有些人用反中括号表示不包括一个区间的临界点。例如[a,b[表示的意思和[a,b)是一样的，即$\lbrace x:a \leq x <b \rbrace$。类似地，]a,b]表示(a,b]，而]a,b[表示(a,b)。
 
 　　符号$-\infty$和$\infty$也会用来表示区间的临界点：$[1,\infty)=\lbrace x \in {\Bbb R}:x \geq 1\rbrace$和$(-\infty,2)=\lbrace x \in {\Bbb R}:x < 2 \rbrace$。尽管表示所有的实数可以用$(-\infty,\infty)$表示，但是更简单明了的方式是用${\Bbb R}$表示。
 
@@ -168,7 +168,7 @@ $$
 
 
 
-## 6. 其它的表示系统
+## 6. 其它的表示体系
 
 　　在工程和科学应用中，数学家也会使用很多其它数字体系。这里我们列出一些常见的体系。
 
@@ -185,7 +185,7 @@ $$
 - **四元数。**哈密顿发现的*四元数*的表现形式是$a+bi+cj+dk$，其中$a,b,c,d \in {\Bbb R}$，且i,j,k有下面的特性：
 
 $$
-\begin{align}i^2=1 \qquad &ij=k \qquad ik=-j \\\\j^2=-1 \qquad &ij=k \qquad ik=-j \\\\j^2=-1 \qquad &ij=k \qquad ik=-j \\\\\end{align}
+\begin{align*}i^2=1 \qquad &ij=k \qquad ik=-j \\\\j^2=-1 \qquad &ij=k \qquad ik=-j \\\\j^2=-1 \qquad &ij=k \qquad ik=-j \\\\\end{align*}
 $$
 
 整个四元数的集合用${\Bbb H}$表示。注意元素间的乘法在${\Bbb H}$中是不能相互交换的。
