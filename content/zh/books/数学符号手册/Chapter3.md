@@ -1,6 +1,7 @@
 ---
 title: 逻辑
 linktitle: 第三章 逻辑
+summary: 数学符号手册，翻译至Mathematical Notation by Edward R. Scheinerman。如何表示逻辑关系。
 toc: true
 type: docs
 date: "2020-09-14T00:00:00+01:00"

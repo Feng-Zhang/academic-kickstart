@@ -1,6 +1,7 @@
 ---
 title: 字母
 linktitle: 第一章 字母
+summary: 数学符号手册，翻译至Mathematical Notation by Edward R. Scheinerman。如何表示字母。
 toc: true
 type: docs
 date: "2020-08-26T00:00:00+01:00"
