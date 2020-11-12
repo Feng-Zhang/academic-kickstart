@@ -38,9 +38,19 @@ image:
 
 以hsa-miR-320a为例，查询后的结果如下图所示：
 
-![image-20201112081914707](20201112210815.png)
+![miRTarBase例子](20201112210815.png)
 
 其中值得注意的是：所有的相互作用对来源于6种证据，有reporter assay, western blot, qPCR, Microarray, NGS, PSILAC。前面三种证据的可靠较强。
+
+
+
+![test](https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%9B%BE%E7%89%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=3363295869,2467511306&os=892371676,71334739&simid=4203536407,592943110&pn=0&rn=1&di=5280&ln=1571&fr=&fmq=1605224080402_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fa0.att.hudong.com%2F30%2F29%2F01300000201438121627296084016.jpg&rpstart=0&rpnum=0&adpicid=0&force=undefined)
+
+
+
+![test2](https://raw.githubusercontent.com/Feng-Zhang/figures/master/blog/20200831000929.png)
+
+
 
 ### [miRDB](http://www.mirdb.org/index.html)
 
