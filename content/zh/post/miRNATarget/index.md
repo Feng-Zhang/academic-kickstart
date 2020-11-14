@@ -38,7 +38,7 @@ image:
 
 以hsa-miR-320a为例，查询后的结果如下图所示：
 
-![miRTarBase例子](20201112210815.png)
+![miRTarBase例子](/figures/blog/20201112210815.png)
 
 其中值得注意的是：所有的相互作用对来源于6种证据，有reporter assay, western blot, qPCR, Microarray, NGS, PSILAC。前面三种证据的可靠较强。
 
@@ -46,7 +46,7 @@ image:
 
 ### [miRDB](http://www.mirdb.org/index.html)
 
-![miRDB例子](20201112211031.png)
+![miRDB例子](/figures/blog/20201112211031.png)
 
 miRDB的可靠性则通过Target Score来体现，从高到低进行排序。点击相对应的Details可以查看相匹配的位点。
 
@@ -58,7 +58,7 @@ TargetScan 则通过搜索mRNA的保守 8mer, 7mer, 和6mer 位点来与miRNA相
 
 
 
-![TargetScan例子](20201112083335140.png)
+![TargetScan例子](/figures/blog/20201112083335140.png)
 
 
 
