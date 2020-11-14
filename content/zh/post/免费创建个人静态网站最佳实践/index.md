@@ -247,13 +247,7 @@ commento后来发现是收费的，现改成valine。
 
 ### 域名解析
 
-可以参考这篇[博客](https://www.cnblogs.com/codernie/p/9062104.html)。具体步骤为：
-1. 登陆netlify。选择相对应的网站。
-2. 绑定域名。Domain settings-Add custom domain - 输入完整域名-保存。这时会出现一个警告，Check DNS configuration，这是因为这时还进行解析。
-3. 解析域名。登陆自己域名的服务商网站，这里以阿里云为例，添加一条CNAME解析。域名列表-找到域名并在域名右边点击解析-新手引导-输入网站的IP地址-确认。
-4. 生成HTTPS证书，实现HTTPS访问。Domain settings-Verify DNS configuration-确定
-
-值得注意的是：在你的域名购买商处管理DNS的时候，要加两条DNS。一条是没有www，一条是有www。阿里云会自动添加，但name服务商需要手动添加。
+可以参考这篇[博客](https://www.cnblogs.com/codernie/p/9062104.html)。值得注意的是：在你的域名购买商处管理DNS的时候，要加两条DNS。一条是没有www，一条是有www。
 
 ![image-20200526113018470](https://i.loli.net/2020/05/26/3kwRGpLSuICDW8d.png)
 
