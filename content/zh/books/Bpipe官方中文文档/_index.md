@@ -48,4 +48,4 @@ Bpipe提供了一个运行大型生物信息学分析的平台，该工作平台
 - **电子邮件，即时消息，消息队列系统进行通知**：Bpipe可以向您发送消息告知您管道何时完成，甚至是每一个阶段的完成情况。
 - 了解Bpipe与[同类工具](http://docs.bpipe.org/Overview/ComparisonToWorkflowTools/)的比较
 
-最后建议查看[前言](http://docs.bpipe.org/Overview/Introduction/)以了解Bpipe的大概特性，通过[基本教程](http://docs.bpipe.org/Tutorials/Hello%2CWorld/)对Bpipe进行初步了解，也可以查看如何一步步使用Bpipe制作的[真实流程例子](http://docs.bpipe.org/Tutorials/RealPipelineTutorial/)，或者查看[其它文档内容]()。
+最后建议查看[前言](http://docs.bpipe.org/Overview/Introduction/)以了解Bpipe的大概特性，通过[基本教程](http://docs.bpipe.org/Tutorials/Hello%2CWorld/)对Bpipe进行初步了解，也可以查看如何一步步使用Bpipe制作的[真实流程例子](http://docs.bpipe.org/Tutorials/RealPipelineTutorial/)，或者查看[其它文档内容](https://www.bioinfo.host/zh/books/bpipe官方中文文档/)。
